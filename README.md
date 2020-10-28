@@ -1,5 +1,5 @@
 
-# This landing pahe for selling laptops
+# This landing page for selling laptops
 ## Link to website: https://isma-rustam.github.io/
 ### 1.Home ![](https://i.imgur.com/WBeZjO9.png)
 ### 2.About ![](https://imgur.com/P5qBZXx.png)
