@@ -22,7 +22,7 @@
               <li><a href="#">LOG OUT</a></li>
             </ul>
   		  </nav>
-  		  <div class="phone"> 
+  		  <div id="phone"> 
             <span>+(996)777-444-555</span>
   		  </div>
   	  </header>
@@ -43,7 +43,7 @@
 
     <div class="container mt-5">
 	  <div class="row">
-	  	<div class="col-md-6 pt-5 bg-warning">
+	  	<div class="col-md-6 pt-5 bg-info">
 	      <h2>Top 5 laptops</h2> 
           <p>How Do I Pick a Good Reliable Laptop? Who makes the best laptops - Asus, Acer, Lenovo, HP, Dell, MSI, Apple?
           There are many questions, and the choice of laptops is now so wide that you can not only get confused, but even get lost in it. From the article you can learn how to buy a laptop that is optimal in terms of price, quality and characteristics, and at the end - the best laptops of 2020, the priorities are high reliability and low price.</p>
@@ -55,14 +55,14 @@
     </div>
 
     <div class="container mt-5">
-      <h3 class="p-5 bg-light">Here you can see all laptop models, you can also buy the one you like.</h1>
+      <h3 class="p-5 bg-light">Here you can see all laptop models, you can also buy the one you like.</h3>
       <div class="card-deck">
         <div class="card">
           <img src="./img/pic-2.jpg" class="card-img-top" alt="mcbook" style="height: 250px">
           <div class="card-body">
             <h5 class="card-title"><b>MacBook Air (2020)</b></h5>
             <p class="card-text">The most popular Mac is up to twice as fast, has twice the memory, and a new Magic Keyboard.<br><b>1300$</b></p>
-            <a href="#" class="btn border-dark text-dark">Buy now</a>       
+            <a href="#" class="btn border-dark text-dark">Buy</a>       
           </div>
         </div>
         <div class="card">
@@ -71,7 +71,7 @@
             <h5 class="card-title"><b>ASUS ZenBook 13</b></h5>
             <p class="card-text">Asus laptops - generation of new computing power, available now at the most attractive price!<br>
             <b>700$</b></p>
-            <a href="#" class="btn border-dark text-dark">Buy now</a>          
+            <a href="#" class="btn border-dark text-dark">Buy</a>          
           </div>
         </div>
         <div class="card">
@@ -79,7 +79,7 @@
           <div class="card-body">
             <h5 class="card-title"><b>Lenovo Yoga C940</b></h5>
             <p class="card-text">Easy-to-manage laptop with high levels of security and powerful collaboration tools to keep you productive wherever you are.<br><b>900$</b></p>
-            <a href="#" class="btn border-dark text-dark">Buy now</a>
+            <a href="#" class="btn border-dark text-dark">Buy</a>
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@
           <div class="card-body">
             <h5 class="card-title"><b>Huawei MateBook 13 (2020)</b></h5>
             <p class="card-text">The laptop enchants the viewer with vivid graphics and allows you to fully immerse yourself in what is happening on the screen.<br><b>1100$</b></p>
-            <a href="#" class="btn border-dark text-dark">Buy now</a>
+            <a href="#" class="btn border-dark text-dark">Buy</a>
           </div>
         </div>
         <div class="card">
@@ -100,7 +100,7 @@
           <div class="card-body">
             <h5 class="card-title"><b>Acer Swift 3</b></h5>
             <p class="card-text">a classic compact laptop designed for a wide range of work or multimedia tasks.Slim, lightweight and stylish, the Swift 3 is ideal for on-the-go work.<br><b>1150$</b></p>
-            <a href="#" class="btn border-dark text-dark">Buy now</a>
+            <a href="#" class="btn border-dark text-dark">Buy</a>
           </div>
         </div>
         <div class="card">
@@ -108,41 +108,60 @@
           <div class="card-body">
             <h5 class="card-title"><b>hp 14 pavilion x360</b></h5>
             <p class="card-text">The new HP Pavilion x360 notebooks impress not only with their features, but also with their design, which balances modern style with classic shapes.<br><b>950$</b></p>
-            <a href="#" class="btn border-dark text-dark">Buy now</a>
+            <a href="#" class="btn border-dark text-dark">Buy</a>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="bg-dark"> 
+    <div class="container  mt-5 mb-5"> 
       <div class="row text-center"> 
-        <div class="col-md-6 mt-5">
-          <h2 class="text-white">Address</h2> 
-          <ul> 
-            <li class="text-white mt-2">Country: Kyrgyzstan</li>
-            <li class="text-white mt-2">City: Bishkek</li>
-            <li class="text-white mt-2">Street: Kievskaya 245</li>
-            <li class="text-white mt-2">+(996)777-444-555</li>
-          </ul>
-        </div>
-        <div class="col-md-6 mt-4"> 
-          <form action="#" class="text-white">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" value=""><br>
-            <label for="sname">Surname:</label><br>
-            <input type="text" id="sname" name="sname" value=""><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="mail" name="mail" value=""><br>
-            <label for="pwd">Password:</label><br>
-            <input type="password" id="pwd" name="pwd"><br><br>
-            <input type="submit" value="Register">
+        <div class="col-md-6 bg-light p-1">
+          <h2>Buy now</h2>
+          <p>Leave a request and we will contact you shortly</p> 
+          <form action="#">
+            <input type="text" name="name" placeholder="Name*" value=""><br><br>
+            <input type="email" name="email" placeholder="Email*" value=""><br><br>
+            <input type="tel" name="phone" placeholder="Phone*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
+            <input type="checkbox" id="confirm" name="confirm" value="">
+            <label for="confirm">confirm</label><br><br>         
+            <input type="submit" value="Send a request!">
           </form> 
         </div>
+        <div class="col-md-6"> 
+          <img src="./img/pic-8.jpg" width="500px" height="310px">
+        </div>
       </div>
-      <div class="footer-copyright text-center py-3"> 
-        <h6 class="text-white">©Copyright 2020</h6>
+    </div>
+
+    <footer class="bg-dark">
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col-md-6 mt-5">
+            <h2 class="text-white ml-5">Address</h2> 
+            <ul> 
+              <li class="text-white mt-2">Country: Kyrgyzstan</li>
+              <li class="text-white mt-2">City: Bishkek/Kievskaya 245</li>
+              <li class="text-white mt-2">Email: example@store.kg</li>
+              <li class="text-white mt-2">+(996)777-444-555</li>
+            </ul>
+          </div>
+          <div class="col-md-6 mt-5">
+            <h2 class="text-white">Do you have a question ?</h2>
+            <p class="text-white">We will gladly answer</p> 
+            <form action="#" class="text-white">           
+              <input type="text" name="name" placeholder="Name*" value="">          
+              <input type="tel" name="phone" placeholder="Phone*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" value="">         
+              <input type="submit" value="Back call">
+            </form> 
+          </div>
+        </div>
+        <div class="footer-copyright text-center py-3"> 
+          <h6 class="text-white">©Copyright 2020</h6>
+        </div>
       </div>
     </footer>
 
   </body>
 </html>
+
